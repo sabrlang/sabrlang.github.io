@@ -12,7 +12,7 @@
         <link rel="prev" href="../comments/">
       
       
-        <link rel="next" href="../controls/">
+        <link rel="next" href="../memory/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -60,6 +60,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#number-literals" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -435,6 +440,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Literals
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -444,6 +460,74 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#number-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Number literals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Character literals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Character literals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#escape-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escape sequences
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      String literals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifier literals
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -457,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../memories.md" class="md-nav__link">
+      <a href="../memory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -661,6 +745,65 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#number-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Number literals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Character literals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Character literals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#escape-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escape sequences
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      String literals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifier literals
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -676,7 +819,44 @@
 
   <h1>Literals</h1>
 
-
+<h2 id="number-literals">Number literals</h2>
+<ul>
+<li>Integers : <code>255</code>, <code>0255</code>, <code>0xff</code>, <code>0o377</code>, <code>0b11111111</code></li>
+<li>Floating-point : <code>0.25</code>, <code>.25</code>, <code>00.250</code>, <code>0.25e0</code>, <code>2.5e-1</code>, <code>0.025e1</code></li>
+</ul>
+<h2 id="character-literals">Character literals</h2>
+<ul>
+<li>Unicode characters : <code>'あ'</code> -&gt; <code>12354</code></li>
+<li>Characters sequence : <code>'Hello'</code> -&gt; <code>111 108 108 101 72</code></li>
+</ul>
+<h3 id="escape-sequences">Escape sequences</h3>
+<ul>
+<li><code>\a</code> -&gt; 7</li>
+<li><code>\b</code> -&gt; 8</li>
+<li><code>\e</code> -&gt; 27</li>
+<li><code>\f</code> -&gt; 12</li>
+<li><code>\n</code> -&gt; 10</li>
+<li><code>\r</code> -&gt; 13</li>
+<li><code>\t</code> -&gt; 9</li>
+<li><code>\v</code> -&gt; 11</li>
+<li><code>\\</code> -&gt; 92</li>
+<li><code>\'</code> -&gt; 39</li>
+<li><code>\"</code> -&gt; 34</li>
+<li><code>\nnn</code> -&gt; The byte whose numerical value is given by nnn interpreted as an octal number.</li>
+<li><code>\xhh</code> -&gt; The byte whose numerical value is given by hh interpreted as a hexadecimal number.</li>
+<li><code>\uhhhh</code> -&gt; Unicode code point below 10000 hexadecimal.</li>
+<li><code>\Uhhhhhhhh</code> -&gt; Unicode code point where h is a hexadecimal digit.</li>
+</ul>
+<h2 id="string-literals">String literals</h2>
+<ul>
+<li><code>"Hello"</code> -&gt; It <code>allot</code> 6 cells. It ends with '\0'.</li>
+</ul>
+<h2 id="identifier-literals">Identifier literals</h2>
+<pre><code>$(identifier)
+</code></pre>
+<p>This is a unique unsigned integer value.</p>
+<p>It used when declaring subroutines, variables, structures, etc.</p>
+<p>Control keywords, built-in operators, literals cannot become identifiers.</p>
 
 
 
